@@ -1,0 +1,560 @@
+@media screen and (max-width:420px){
+.mobile-none{
+    display: none;
+}
+}
+
+@media screen and (min-width:1440px){
+    .desktop-none{
+        display: none;
+
+    }
+    #logo{
+
+        @include size(132px,30px);
+        padding-top:59px;
+        position: relative;
+        left:80px;
+    
+    
+    
+        }
+    header{
+        background-image: url("../images/vintage-photo.jpg");
+        
+    }
+    
+    .size-h1{
+        @include size(752px,69px);
+        padding-top:190px;
+        padding-bottom:28px;
+        font-size: $header-font;
+    }
+    .size-p{
+    
+        @include size(581px,80px);
+        font-size: $font-24
+    }
+
+    .flex-space{
+        display:flex;
+        flex-direction: row-reverse;
+        justify-content:space-between;
+        align-items:center;
+    
+    }
+    .size-container{
+        @include size(320/370*100%,34px);
+        padding-top:40px;
+        
+    
+    }
+    .reserve-btn{
+        @include size(222px,54px);
+        border-radius:$border-15;
+        border-style:none;
+    }
+    .flex-center-desktop{
+        display:flex;
+        flex-direction: row-reverse;
+        justify-content:center;
+        align-items:center;
+    
+    }
+
+    .flex-center-row{
+        display:flex;
+        justify-content:flex-end;
+        align-items:center;
+        gap:13px;
+    }
+    .flex-space-around{
+        display:flex;
+        flex-direction: row-reverse;
+        justify-content:space-around;
+        align-items:center;
+        gap:20px;
+        padding-right:20px;
+    
+    }
+    
+    .margin-auto{
+        position: relative;
+        margin-right:auto;
+        margin-left:auto;
+    }
+    .padding-left-12{
+        padding-left:12px;
+    }
+    .down{
+        @include size(108px,18px);
+    }
+    .container-1{
+        @include size(108px,100px);
+        position: relative;
+        bottom:50px;
+        padding-bottom: 110px;
+    }
+    .arrow{
+        @include size(108px,74px);
+        position:relative;
+        bottom:50px;
+        left:500px;
+    }
+    .clear-float{
+        clear: both;
+    }
+    #container-2{
+        @include size(100%,760px);
+        padding-top:76px;
+        padding-bottom: 77px;
+        
+    }
+    .container-2-div{
+        @include size(523px,96px);
+        padding-bottom: 48px;
+        padding-left:856px;
+
+    }
+    .container2-title{
+        font-size: $font-48;
+        padding-bottom: 24px;
+    }
+    .container2-sub{
+        font-size: $font-24;
+    }
+    
+
+    
+    .city{
+    
+        @include size(280px,24px);
+        padding-top:21px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+
+    
+    
+    }
+    #city-cards{
+        display:flex;
+        flex-direction: row-reverse;
+        justify-content:center;
+        align-items:center;
+        gap:28px;
+        margin-right:180px;
+
+
+    }
+    .width-144{
+        width:144px;
+    
+    }
+    .width-271{
+        width:271px;
+    }
+    .service-div{
+        @include size(541px,96px);
+
+    }
+    #service-tit{
+        @include size(215px,24px);
+        font-size: $font-24;
+        padding-bottom:24px;
+
+
+    }
+    #service-sub{
+        @include size(541px,48px);
+        font-size: $font-48;
+
+
+
+    }
+ 
+    .price{
+        @include size(280px,18px);
+        padding-bottom:17px;
+        padding-top: 14px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    
+    
+    }
+    .white-border{
+        @include size(332px,106px);
+        border-radius: $border-16;
+        bottom:130px;
+        
+    }
+    
+    .card{
+        @include size(380px,600px);
+    
+    
+    }
+    .float-right-desktop{
+        float:right;
+    }
+
+
+    #service{
+        @include size(1320px,680px);
+        padding-bottom:76px;
+        
+    
+    }
+    #purple-arrow{
+        position: absolute;
+        right:747px;
+        top:150px;
+    }
+    .service-block{
+        @include size(249px,264px);
+        padding-bottom:110px;
+    }
+    .service-container{
+        border-radius: $border-25;
+        margin-top:48px;
+        @include size(1320px,520px);
+        
+
+        
+    }
+    #service-title1{
+        @include size(163px,20px);
+    
+    
+    }
+    #service-title2{
+        @include size(249px,56px);
+    }
+    .padding-service{
+        padding-top:28px;
+    }
+    
+    #service-title3{
+        @include size(213px,20px);
+
+    }
+    #service-title4{
+        @include size(255px,56px);
+    }
+    #service-title5{
+        @include size(185px,20px);
+    }
+    #service-title6{
+        @include size(258px,56px);
+    }
+    #prices{
+        @include size(1319px,758px);
+    
+    }
+    #prices-title{
+        @include size(273px,24px);
+        padding-left:1107-60px;
+        padding-top:76px;
+        font-size: $font-24;
+    
+    }
+    #plan-container{
+        @include size(1319px,598px);
+
+    }
+    #btn-pos{
+        position: relative;
+        bottom:355px;
+    }
+    #prices-intro{
+        @include size(552px,96px);
+        padding-bottom:111px;
+
+    }
+    #prices-sub{
+        @include size(552px,48px);
+        padding-left:828-60px;
+        padding-top:12px;
+        padding-bottom:48px;
+        font-size: $font-48;
+    
+    }
+
+    .price-border{
+        @include size(410px,551px);
+        border-radius:$border-25;
+        box-shadow: 10px 10px;
+        margin-bottom: 40px;
+    
+    }
+    .per{
+        @include size(251px,36px);
+        padding-top:36px;
+        padding-bottom:16px;
+        justify-content: flex-start;
+        padding-left: 126px;
+    }
+    .plan{
+        @include size(245px,24px);
+        padding-bottom:16px;
+        padding-left:132px;
+    
+    
+    }
+    .descrip{
+        @include size(344px,56px);
+        padding-left:33px;
+        padding-bottom:32px;
+        line-height: 28px;
+    }
+    a{
+        text-decoration: none;
+        color: $white;
+
+    }
+    .review-border{
+        @include size(424px,252px);
+        margin-top: 48px;
+    
+        border-radius:$border-25;
+    }
+    section{
+        ul{
+            gap:1px;
+            li{
+
+                @include size(100px,21px);
+                
+
+            }
+        }
+    }
+    article{
+    
+        ul{
+            
+            li{
+                @include size(279px,24px);
+                background-image: url(/images/check-icon.png);
+                padding-right:30px;
+    
+                @include check();
+ 
+    
+            }
+            @include size(279px,112px);
+            padding-top:32px;
+            padding-bottom: 25px;
+            padding-left: 70px;
+            line-height: 20px;
+        }
+    }
+    .border-btn{
+        background-color: inherit;
+        border-radius: $border-15;
+        @include size(344px,54px);
+        margin-left:33px;
+        gap:12px;
+    
+    }
+    .border-white{
+        border-color:$white;
+    }
+    #reviews{
+        @include size(1320px,496px);
+        padding-top:154px;
+    
+    
+    }
+    .reviews-title{
+        @include size(110px,24px);
+        font-size: $font-24;
+        padding-bottom: 24px;
+
+
+
+    }
+    .reviews-sub{
+        @include size(630px,48px);
+        font-size: $font-48;
+
+    }
+    #review-container{
+        @include size(630px,96px);
+
+
+    }
+    .review-gap-desktop{
+        gap:100px;
+    }
+
+    .stars{
+        @include size(116px,20px);
+        padding-top:32px;
+        padding-left:184px;
+        padding-bottom: 18px;
+    }
+    
+        .reviewer{
+            @include size(280px,48px);
+            padding-bottom:18px;
+    
+    
+    
+        }
+    .comment{
+        @include size(280px,84px);
+        padding-bottom:18px;
+    
+    }
+    .direct{
+        border-radius:50%;
+        border-style:none;
+        box-shadow: inset;
+    }
+    #buttons{
+        @include size(120px,48px);
+        padding-top:36px;
+    
+    }
+    #feedback{
+        @include size(320px,796px);
+        padding-top: 76px;
+    
+    }
+    #feedback-container{
+        @include size(537px,96px);
+        padding-bottom:48px;
+        padding-left:200px;
+    }
+    #feedback-title{
+        @include size(208px,24px);
+        padding-bottom:24px;
+        padding-left:329px;
+        font-size: $font-24;
+
+    }
+    #feedback-sub{
+        @include size(537px,96px);
+        font-size: $font-48;
+    }
+    
+    
+    #feedback-form{
+        @include size(648px,636px);
+        border-radius:$border-25;
+        box-shadow: 10px 10px;
+        margin-bottom: 56px;
+    
+    }
+    .name-align{
+        @include size(584px,100px);
+        padding-top:44px;
+    
+    
+    }
+    
+    .text-border{
+        @include size(584px,60px);
+        border-radius:$border-15;
+    
+    }
+    .textarea-border{
+        @include size(584px,120px);
+        border-radius:$border-15;
+    
+    }
+    .submit-button{
+        @include size(280px,60px);
+        border-radius: $border-15;
+        margin-left:320px;
+    
+    }
+    #submit{
+        padding-top: 70px;
+    }
+    #info{
+        @include size(468px,468px);
+
+    }
+    #feedback-gap{
+        gap:64px;
+    }
+    #help{
+        @include size(302px,96px);
+        padding-top:28px;
+        padding-bottom: 40px;
+    }
+    .padding-bottom-20{
+        padding-bottom: 20px;
+    }
+    #contact{
+        @include size(277px,96px);
+        padding-top:28px;
+        padding-bottom:40px;
+    
+    }
+    #contact-title{
+        @include size(86px,20px);
+        padding-left:95px;
+    
+    
+    }
+    #time{
+        @include size(287px,56px);
+        padding-top: 25px;
+    
+    }
+    #footer{
+        @include size(100%,517px);
+        a{
+            text-decoration: none;
+            color: $mid-grey;
+        }
+    
+    #footer-container{
+        @include size(1420px,406px);
+
+    }
+    
+    }
+    #my-logo{
+        @include size(132px,30px);
+        padding-left:208px;
+        padding-bottom:28px;
+    
+    
+    
+    
+    }
+    #company{
+        @include size(303px,154px);
+    
+    }
+    #self{
+        @include size(303px,96px);
+        padding-left: 37px;
+    
+    }
+    #about{
+        @include size(95px,228px);
+    
+    }
+    #our-services{
+        @include size(112px,268px);
+        padding-top:44px
+    
+    
+    }
+    #reservations{
+        @include size(117px,220px);
+    
+    }
+    #website{
+        @include size(133px,220px);
+    
+    }
+
+    
+}
