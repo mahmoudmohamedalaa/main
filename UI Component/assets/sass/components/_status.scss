@@ -1,0 +1,27 @@
+// status styling
+@mixin status-base{
+    @include size(408/408*100%,73px);
+    border-radius: $border-rad-8;
+
+}
+
+.wrong-status{
+
+    background-color: $light-pink;
+}
+
+.attention-status{
+
+    background-color: $peach-cream;
+}
+
+.success-status{
+
+    background-color: $light-teal;
+}
+
+.other-status{
+
+    background-color: $light-sky-blue;
+}
+
