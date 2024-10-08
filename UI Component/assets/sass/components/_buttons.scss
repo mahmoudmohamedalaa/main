@@ -1,0 +1,42 @@
+// buttons styling
+
+@mixin btn-base{
+    border-radius: $border-rad-8;
+    border-style: none;
+
+}
+
+
+.normal-button{
+    @include btn-base;
+    background-color: $calm-purple;
+    @include size(calc(281/281*100%),49px);
+    margin-bottom: 20px;
+
+}
+.loading-button{
+    @include btn-base;
+    background-color:$light-periwinkle;
+    @include size(calc(281/281*100%),49px);
+    color:#5F6DDD;
+    margin-bottom: 20px;
+
+
+
+}
+.secondary-button{
+    @include btn-base;
+    background-color: inherit;
+    @include size(calc(281/281*100%),49px);
+    border-style: solid;
+    border-color: $calm-purple
+}
+.done-button{
+    @include btn-base;
+    background-color: $calm-purple;
+    @include size(calc(292/281*100%),49px);
+
+}
+.buttons-margin{
+    margin:20px;
+}

@@ -1,0 +1,37 @@
+.search-bar-container{
+    border-radius: $border-rad-8;
+}
+
+.search-input-container{
+    width:calc(626/1088)*100%;
+    margin-top:12px;
+    margin-bottom:12px;
+    border-radius: $border-rad-200;
+
+}
+.search-icon{
+    @include size(13%,36px);
+    top:12px;
+
+}
+
+.search-input{
+    @include size(87%,36px);
+    border-style:none;
+    border-radius: $border-rad-200;
+
+}
+
+header{
+    nav{
+        ul{
+            gap:43px;
+        }
+    }
+}
+
+.li-align{
+    position:absolute;
+    right:32px;
+
+}
