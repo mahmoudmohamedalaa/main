@@ -1,0 +1,1200 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*web page colors*/
+.yellow {
+  color: #FEC430;
+}
+
+.yellow-bg {
+  background-color: #FEC430;
+}
+
+.light-grey {
+  color: #A5A5A5;
+}
+
+.light-grey-bg {
+  background-color: #A5A5A5;
+}
+
+.mid-grey {
+  color: #797979;
+}
+
+.mid-grey-bg {
+  background-color: #797979;
+}
+
+.grey {
+  color: #4C4C4C;
+}
+
+.grey-bg {
+  background-color: #4C4C4C;
+}
+
+.black {
+  color: #191919;
+}
+
+.black-bg {
+  background-color: #191919;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.white-bg {
+  background-color: #ffffff;
+}
+
+.purple {
+  color: #755AE8;
+}
+
+.purple-bg {
+  background-color: #755AE8;
+}
+
+.sand {
+  color: #FFE7AC;
+}
+
+.sand-bg {
+  background-color: #FFE7AC;
+}
+
+.blue {
+  color: #46368B;
+}
+
+.blue-bg {
+  background-color: #46368B;
+}
+
+.grape {
+  color: #F1EFFD;
+}
+
+.grape-bg {
+  background-color: #F1EFFD;
+}
+
+/*web page typography*/
+.font-family-1 {
+  font-family: "Lama Sans", sans-serif;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-17 {
+  font-size: 17px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.font-24 {
+  font-size: 24px;
+}
+
+.font-38 {
+  font-size: 38px;
+}
+
+.font-26 {
+  font-size: 26px;
+}
+
+.font-30 {
+  font-size: 30px;
+}
+
+.font-36 {
+  font-size: 36px;
+}
+
+.font-48 {
+  font-size: 48px;
+}
+
+.font-68 {
+  font-size: 68px;
+}
+
+.font-400 {
+  font-weight: 400;
+}
+
+.font-500 {
+  font-weight: 500;
+}
+
+.font-600 {
+  font-weight: 600;
+}
+
+.font-700 {
+  font-weight: 700;
+}
+
+.font-900 {
+  font-weight: 900;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+#logo {
+  width: 115px;
+  height: 26px;
+}
+
+header {
+  background-image: url("../images/vintage-mobile.jpg");
+}
+
+.size-h1 {
+  width: 79.7297297297%;
+  height: 98px;
+  padding-top: 50px;
+}
+
+.size-p {
+  width: 79.7297297297%;
+  height: 90px;
+}
+
+.btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  border-style: none;
+}
+
+.flex-space {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.size-container {
+  width: 86.4864864865%;
+  height: 34px;
+  padding-top: 40px;
+}
+
+.reserve-btn {
+  width: 86.4864864865%;
+  height: 54px;
+  border-radius: 15px;
+  border-style: none;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 13px;
+}
+
+.flex-space-around {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.margin-auto {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.padding-left-12 {
+  padding-left: 12px;
+}
+
+.down {
+  width: 108px;
+  height: 18px;
+}
+
+.container-1 {
+  width: 108px;
+  height: 100px;
+  position: relative;
+  bottom: 50px;
+}
+
+.arrow {
+  width: 93px;
+  height: 64px;
+  position: relative;
+  padding-top: 67.01px;
+  left: 0px;
+}
+
+.clear-float {
+  clear: both;
+}
+
+#container-2 {
+  width: 100%;
+  height: 471px;
+  padding-top: 76px;
+  padding-bottom: 77px;
+}
+
+.container-2-div {
+  width: 320px;
+  height: 52px;
+  padding-bottom: 48px;
+}
+
+.city {
+  width: 198px;
+  height: 17px;
+  padding-right: 12px;
+  padding-top: 21px;
+}
+
+.width-144 {
+  width: 144px;
+}
+
+.width-271 {
+  width: 271px;
+}
+
+.price {
+  width: 198px;
+  height: 16px;
+  padding-right: 12px;
+  padding-bottom: 17px;
+  padding-top: 14px;
+}
+
+.white-border {
+  width: 211px;
+  height: 85px;
+  border-radius: 16px;
+  bottom: 100px;
+}
+
+.card {
+  width: 235px;
+  height: 370px;
+}
+
+.float-right {
+  float: right;
+}
+
+#service {
+  width: 320px;
+  height: 1100px;
+  padding-bottom: 76px;
+}
+
+#purple-arrow {
+  position: absolute;
+  right: 195.84px;
+  top: 75px;
+}
+
+.service-block {
+  width: 249px;
+  height: 264px;
+  padding-bottom: 40px;
+}
+
+.service-container {
+  border-radius: 25px;
+  padding-top: 64px;
+  margin-top: 48px;
+  width: 320px;
+  height: 1010.68px;
+}
+
+#service-title1 {
+  width: 163px;
+  height: 20px;
+}
+
+#service-title2 {
+  width: 249px;
+  height: 56px;
+}
+
+.padding-service {
+  padding-top: 28px;
+}
+
+#service-title3 {
+  width: 213px;
+  height: 20px;
+}
+
+#service-title4 {
+  width: 255px;
+  height: 56px;
+}
+
+#service-title5 {
+  width: 185px;
+  height: 20px;
+}
+
+#service-title6 {
+  width: 258px;
+  height: 56px;
+}
+
+#prices {
+  width: 88.8888888889%;
+  height: 1647px;
+}
+
+#prices-title {
+  width: 182px;
+  height: 16px;
+  padding-left: 158px;
+  padding-top: 76px;
+}
+
+#prices-sub {
+  width: 276px;
+  height: 24px;
+  padding-left: 64px;
+  padding-top: 12px;
+  padding-bottom: 48px;
+}
+
+.price-border {
+  width: 320px;
+  height: 489px;
+  border-radius: 25px;
+  box-shadow: 10px 10px;
+  margin-bottom: 40px;
+}
+
+.per {
+  width: 251px;
+  height: 36px;
+  padding-top: 36px;
+  padding-bottom: 16px;
+  justify-content: flex-start;
+}
+
+.plan {
+  width: 245px;
+  height: 20px;
+  padding-bottom: 16px;
+  padding-right: 0px;
+}
+
+.descrip {
+  width: 272px;
+  height: 56px;
+  padding-right: 0px;
+  padding-bottom: 32px;
+  line-height: 28px;
+}
+
+article ul {
+  width: 279px;
+  height: 110px;
+  padding-top: 32px;
+  padding-bottom: 25px;
+  position: relative;
+  right: 30px;
+}
+article ul li {
+  width: 300px;
+  height: 24px;
+  background-image: url(/images/check-icon.png);
+  padding-right: 30px;
+  background-repeat: repeat-y;
+  background-position: right center;
+  margin-left: 1em;
+}
+
+.border-btn {
+  background-color: inherit;
+  border-radius: 15px;
+  width: 272px;
+  height: 54px;
+  margin-left: 24px;
+  gap: 12px;
+}
+
+.border-white {
+  border-color: #ffffff;
+}
+
+#reviews {
+  width: 320px;
+  height: 948px;
+  padding-top: 154px;
+}
+
+.review-border {
+  width: 320px;
+  height: 252px;
+  margin-top: 48px;
+  border-radius: 25px;
+}
+
+.stars {
+  width: 116px;
+  height: 20px;
+  padding-top: 32px;
+  padding-left: 184px;
+  padding-bottom: 18px;
+}
+
+.reviewer {
+  width: 280px;
+  height: 48px;
+  padding-bottom: 18px;
+}
+
+.comment {
+  width: 280px;
+  height: 84px;
+  padding-bottom: 18px;
+}
+
+.direct {
+  border-radius: 50%;
+  border-style: none;
+  box-shadow: inset;
+}
+
+#buttons {
+  width: 120px;
+  height: 48px;
+  padding-top: 36px;
+}
+
+#feedback {
+  width: 320px;
+  height: 1591px;
+  padding-top: 76px;
+}
+
+#feedback-title {
+  width: 269px;
+  height: 52px;
+  padding-bottom: 48px;
+  padding-left: 51px;
+}
+
+#feedback-form {
+  width: 320px;
+  height: 566px;
+  border-radius: 25px;
+  box-shadow: 10px 10px;
+  margin-bottom: 56px;
+}
+
+.name-align {
+  width: 280px;
+  height: 94px;
+  padding-top: 44px;
+}
+
+.text-border {
+  width: 280px;
+  height: 60px;
+  border-radius: 15px;
+}
+
+.textarea-border {
+  width: 280px;
+  height: 120px;
+  border-radius: 15px;
+}
+
+.submit-button {
+  width: 280px;
+  height: 60px;
+  border-radius: 15px;
+}
+
+#submit {
+  padding-top: 70px;
+}
+
+#help {
+  width: 302px;
+  height: 96px;
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.padding-bottom-20 {
+  padding-bottom: 20px;
+}
+
+#contact {
+  width: 277px;
+  height: 96px;
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+#contact-title {
+  width: 86px;
+  height: 20px;
+  padding-left: 95px;
+}
+
+#time {
+  width: 287px;
+  height: 56px;
+  padding-top: 25px;
+}
+
+#footer {
+  width: 100%;
+  height: 1057px;
+  margin-top: 76px;
+}
+#footer a {
+  text-decoration: none;
+  color: #797979;
+}
+
+#my-logo {
+  width: 132px;
+  height: 30px;
+  padding-left: 208px;
+  padding-bottom: 28px;
+  padding-top: 76px;
+}
+
+#company {
+  width: 303px;
+  height: 154px;
+}
+
+#self {
+  width: 303px;
+  height: 96px;
+  padding-left: 37px;
+}
+
+#about {
+  width: 85px;
+  height: 220px;
+  padding-top: 44px;
+}
+
+#our-services {
+  width: 112px;
+  height: 268px;
+  padding-top: 44px;
+}
+
+#reservations {
+  width: 117px;
+  height: 220px;
+}
+
+#website {
+  width: 133px;
+  height: 220px;
+}
+
+.sequence-mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 420px) {
+  .mobile-none {
+    display: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .desktop-none {
+    display: none;
+  }
+  #logo {
+    width: 132px;
+    height: 30px;
+    padding-top: 59px;
+    position: relative;
+    left: 80px;
+  }
+  header {
+    background-image: url("../images/vintage-photo.jpg");
+  }
+  .size-h1 {
+    width: 752px;
+    height: 69px;
+    padding-top: 190px;
+    padding-bottom: 28px;
+    font-size: 68px;
+  }
+  .size-p {
+    width: 581px;
+    height: 80px;
+    font-size: 24px;
+  }
+  .flex-space {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .size-container {
+    width: 86.4864864865%;
+    height: 34px;
+    padding-top: 40px;
+  }
+  .reserve-btn {
+    width: 222px;
+    height: 54px;
+    border-radius: 15px;
+    border-style: none;
+  }
+  .flex-center-desktop {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .flex-center-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 13px;
+  }
+  .flex-space-around {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding-right: 20px;
+  }
+  .margin-auto {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .padding-left-12 {
+    padding-left: 12px;
+  }
+  .down {
+    width: 108px;
+    height: 18px;
+  }
+  .container-1 {
+    width: 108px;
+    height: 100px;
+    position: relative;
+    bottom: 50px;
+    padding-bottom: 110px;
+  }
+  .arrow {
+    width: 108px;
+    height: 74px;
+    position: relative;
+    bottom: 50px;
+    left: 500px;
+  }
+  .clear-float {
+    clear: both;
+  }
+  #container-2 {
+    width: 100%;
+    height: 760px;
+    padding-top: 76px;
+    padding-bottom: 77px;
+  }
+  .container-2-div {
+    width: 523px;
+    height: 96px;
+    padding-bottom: 48px;
+    padding-left: 856px;
+  }
+  .container2-title {
+    font-size: 48px;
+    padding-bottom: 24px;
+  }
+  .container2-sub {
+    font-size: 24px;
+  }
+  .city {
+    width: 280px;
+    height: 24px;
+    padding-top: 21px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #city-cards {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    margin-right: 180px;
+  }
+  .width-144 {
+    width: 144px;
+  }
+  .width-271 {
+    width: 271px;
+  }
+  .service-div {
+    width: 541px;
+    height: 96px;
+  }
+  #service-tit {
+    width: 215px;
+    height: 24px;
+    font-size: 24px;
+    padding-bottom: 24px;
+  }
+  #service-sub {
+    width: 541px;
+    height: 48px;
+    font-size: 48px;
+  }
+  .price {
+    width: 280px;
+    height: 18px;
+    padding-bottom: 17px;
+    padding-top: 14px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .white-border {
+    width: 332px;
+    height: 106px;
+    border-radius: 16px;
+    bottom: 130px;
+  }
+  .card {
+    width: 380px;
+    height: 600px;
+  }
+  .float-right-desktop {
+    float: right;
+  }
+  #service {
+    width: 1320px;
+    height: 680px;
+    padding-bottom: 76px;
+  }
+  #purple-arrow {
+    position: absolute;
+    right: 747px;
+    top: 150px;
+  }
+  .service-block {
+    width: 249px;
+    height: 264px;
+    padding-bottom: 110px;
+  }
+  .service-container {
+    border-radius: 25px;
+    margin-top: 48px;
+    width: 1320px;
+    height: 520px;
+  }
+  #service-title1 {
+    width: 163px;
+    height: 20px;
+  }
+  #service-title2 {
+    width: 249px;
+    height: 56px;
+  }
+  .padding-service {
+    padding-top: 28px;
+  }
+  #service-title3 {
+    width: 213px;
+    height: 20px;
+  }
+  #service-title4 {
+    width: 255px;
+    height: 56px;
+  }
+  #service-title5 {
+    width: 185px;
+    height: 20px;
+  }
+  #service-title6 {
+    width: 258px;
+    height: 56px;
+  }
+  #prices {
+    width: 1319px;
+    height: 758px;
+  }
+  #prices-title {
+    width: 273px;
+    height: 24px;
+    padding-left: 1047px;
+    padding-top: 76px;
+    font-size: 24px;
+  }
+  #plan-container {
+    width: 1319px;
+    height: 598px;
+  }
+  #btn-pos {
+    position: relative;
+    bottom: 355px;
+  }
+  #prices-intro {
+    width: 552px;
+    height: 96px;
+    padding-bottom: 111px;
+  }
+  #prices-sub {
+    width: 552px;
+    height: 48px;
+    padding-left: 768px;
+    padding-top: 12px;
+    padding-bottom: 48px;
+    font-size: 48px;
+  }
+  .price-border {
+    width: 410px;
+    height: 551px;
+    border-radius: 25px;
+    box-shadow: 10px 10px;
+    margin-bottom: 40px;
+  }
+  .per {
+    width: 251px;
+    height: 36px;
+    padding-top: 36px;
+    padding-bottom: 16px;
+    justify-content: flex-start;
+    padding-left: 126px;
+  }
+  .plan {
+    width: 245px;
+    height: 24px;
+    padding-bottom: 16px;
+    padding-left: 132px;
+  }
+  .descrip {
+    width: 344px;
+    height: 56px;
+    padding-left: 33px;
+    padding-bottom: 32px;
+    line-height: 28px;
+  }
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .review-border {
+    width: 424px;
+    height: 252px;
+    margin-top: 48px;
+    border-radius: 25px;
+  }
+  section ul {
+    gap: 1px;
+  }
+  section ul li {
+    width: 100px;
+    height: 21px;
+  }
+  article ul {
+    width: 279px;
+    height: 112px;
+    padding-top: 32px;
+    padding-bottom: 25px;
+    padding-left: 70px;
+    line-height: 20px;
+  }
+  article ul li {
+    width: 279px;
+    height: 24px;
+    background-image: url(/images/check-icon.png);
+    padding-right: 30px;
+    background-repeat: repeat-y;
+    background-position: right center;
+    margin-left: 1em;
+  }
+  .border-btn {
+    background-color: inherit;
+    border-radius: 15px;
+    width: 344px;
+    height: 54px;
+    margin-left: 33px;
+    gap: 12px;
+  }
+  .border-white {
+    border-color: #ffffff;
+  }
+  #reviews {
+    width: 1320px;
+    height: 496px;
+    padding-top: 154px;
+  }
+  .reviews-title {
+    width: 110px;
+    height: 24px;
+    font-size: 24px;
+    padding-bottom: 24px;
+  }
+  .reviews-sub {
+    width: 630px;
+    height: 48px;
+    font-size: 48px;
+  }
+  #review-container {
+    width: 630px;
+    height: 96px;
+  }
+  .review-gap-desktop {
+    gap: 100px;
+  }
+  .stars {
+    width: 116px;
+    height: 20px;
+    padding-top: 32px;
+    padding-left: 184px;
+    padding-bottom: 18px;
+  }
+  .reviewer {
+    width: 280px;
+    height: 48px;
+    padding-bottom: 18px;
+  }
+  .comment {
+    width: 280px;
+    height: 84px;
+    padding-bottom: 18px;
+  }
+  .direct {
+    border-radius: 50%;
+    border-style: none;
+    box-shadow: inset;
+  }
+  #buttons {
+    width: 120px;
+    height: 48px;
+    padding-top: 36px;
+  }
+  #feedback {
+    width: 320px;
+    height: 796px;
+    padding-top: 76px;
+  }
+  #feedback-container {
+    width: 537px;
+    height: 96px;
+    padding-bottom: 48px;
+    padding-left: 200px;
+  }
+  #feedback-title {
+    width: 208px;
+    height: 24px;
+    padding-bottom: 24px;
+    padding-left: 329px;
+    font-size: 24px;
+  }
+  #feedback-sub {
+    width: 537px;
+    height: 96px;
+    font-size: 48px;
+  }
+  #feedback-form {
+    width: 648px;
+    height: 636px;
+    border-radius: 25px;
+    box-shadow: 10px 10px;
+    margin-bottom: 56px;
+  }
+  .name-align {
+    width: 584px;
+    height: 100px;
+    padding-top: 44px;
+  }
+  .text-border {
+    width: 584px;
+    height: 60px;
+    border-radius: 15px;
+  }
+  .textarea-border {
+    width: 584px;
+    height: 120px;
+    border-radius: 15px;
+  }
+  .submit-button {
+    width: 280px;
+    height: 60px;
+    border-radius: 15px;
+    margin-left: 320px;
+  }
+  #submit {
+    padding-top: 70px;
+  }
+  #info {
+    width: 468px;
+    height: 468px;
+  }
+  #feedback-gap {
+    gap: 64px;
+  }
+  #help {
+    width: 302px;
+    height: 96px;
+    padding-top: 28px;
+    padding-bottom: 40px;
+  }
+  .padding-bottom-20 {
+    padding-bottom: 20px;
+  }
+  #contact {
+    width: 277px;
+    height: 96px;
+    padding-top: 28px;
+    padding-bottom: 40px;
+  }
+  #contact-title {
+    width: 86px;
+    height: 20px;
+    padding-left: 95px;
+  }
+  #time {
+    width: 287px;
+    height: 56px;
+    padding-top: 25px;
+  }
+  #footer {
+    width: 100%;
+    height: 517px;
+  }
+  #footer a {
+    text-decoration: none;
+    color: #797979;
+  }
+  #footer #footer-container {
+    width: 1420px;
+    height: 406px;
+  }
+  #my-logo {
+    width: 132px;
+    height: 30px;
+    padding-left: 208px;
+    padding-bottom: 28px;
+  }
+  #company {
+    width: 303px;
+    height: 154px;
+  }
+  #self {
+    width: 303px;
+    height: 96px;
+    padding-left: 37px;
+  }
+  #about {
+    width: 95px;
+    height: 228px;
+  }
+  #our-services {
+    width: 112px;
+    height: 268px;
+    padding-top: 44px;
+  }
+  #reservations {
+    width: 117px;
+    height: 220px;
+  }
+  #website {
+    width: 133px;
+    height: 220px;
+  }
+}/*# sourceMappingURL=styles.css.map */
