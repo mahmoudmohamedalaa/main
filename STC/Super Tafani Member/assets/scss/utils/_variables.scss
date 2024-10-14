@@ -1,0 +1,104 @@
+//colors
+$sky-blue: #08A0F7;          
+$ocean-blue: #1778B0;        
+$calm-purple: #7784EE;       
+$light-gray-blue: #C4CAD3;   
+$medium-gray: #C9C9C9;       
+$light-sky-blue: #F0F5FC;    
+$deep-black: #121212;        
+$emerald-green: #46BD84;     
+$forest-green: #33AC72;     
+$golden-yellow: #FBA63C;     
+$violet-purple: #9D1CB2;     
+$magenta-pink: #D459E8;     
+$teal-green: #34A770;       
+$coral-red: #F85640;      
+$light-periwinkle: #D2D7FF;  
+$light-pink: #FFF8F8;      
+$peach-cream: #FFF8EF;       
+$amber-orange: #E18109;      
+$burnt-orange: #BC741A;      
+$light-teal: #DCF3EB;        
+$forest-green-dark: #10673E;
+$deep-green: #13854E;
+$steel-blue: #3387B7;
+$light-blue: #E1F2FC;
+$white:#FFFFFF;
+$page-background:#EAEEF6;
+
+//font-sizes
+$font-11:11px;
+$font-12:12px;
+$font-13:13px;
+$font-14:14px;
+$font-15:15px;
+$font-20:20px;
+$font-32:32px;
+
+//line height
+
+$line-12:12px;
+$line-17:17px;
+$line-18:18px;
+$line-21:21px;
+$line-22:22px;
+$line-23:23px;
+$line-24:24px;
+
+
+
+//font weight
+$font-400:400;
+$font-500:500;
+$font-600:600;
+$font-700:700;
+
+//border radius
+$border-rad-80:80px;
+$border-rad-200:200px;
+
+
+@mixin size($width,$height){
+    width:$width;
+    height:$height;
+}
+
+//spacing
+
+$spacing-80:80px;
+$spacing-52:52px;
+$spacing-51:51px;
+$spacing-50:50px;
+$spacing-48:48px;
+$spacing-44:44px;
+$spacing-40:40px;
+$spacing-36:36px;
+$spacing-34:34px;
+$spacing-30:30px;
+$spacing-28:28px;
+$spacing-26:26px;
+$spacing-25:25px;
+$spacing-24:24px;
+$spacing-22:22px;
+$spacing-20:20px;
+$spacing-16:16px;
+$spacing-12:12px;
+$spacing-10:10px;
+$spacing-8:8px;
+$spacing-4:4px;
+
+//media width
+$media-lg:1000px;
+$media-mid:900px;
+$media-sm:430px;
+
+//Grid : Column Count
+
+$grid-column-count:12;
+
+
+//Grid: Gutters
+$grid-gutter:7.5px;
+$grid-gutter-sm:calc($grid-gutter/2);
+$grid-gutter-lg:$grid-gutter*2;
+

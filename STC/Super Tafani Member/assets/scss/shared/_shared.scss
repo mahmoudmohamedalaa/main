@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'STC Forward';
+    src: url(/assets/fonts/FontsFree-Net-STC-Forward-Regular-1.ttf) format('truetype');
+    font-style:normal;
+}
+
+
+body{
+    font-family: 'STC Forward';
+}
+
+*{
+	box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color:white;
+
+}
+
+li:hover{
+    background-color: #420374;
+    border-left: 5px solid #FF375E;
+    height:31px;
+    width:100% ;
+
+}
+ul,li{
+    list-style: none;
+    text-decoration: none;
+}
+@mixin size($width,$height){
+    width:$width;
+    height:$height;
+}
+.opacity-20{
+    opacity:20%;
+}
