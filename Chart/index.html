@@ -12,8 +12,8 @@
   <div class="container d-flex justify-content-center align-items-center">
     <div class="d-flex flex-column gap-4 me-3">
     <div class="dropdown">
-        <button class="btn border dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Dropdown button
+        <button class="btn border dropdown-toggle" type="button" id="button1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Select currency
         </button>
         <div class="dropdown-menu flow " id="dropdownItems1" aria-labelledby="dropdownMenuButton">
 
@@ -21,8 +21,8 @@
     
       </div>
       <div class="dropdown">
-        <button class="btn border dropdown-toggle" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Dropdown button
+        <button class="btn border dropdown-toggle" type="button" id="button2"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Select currency
         </button>
         <div class="dropdown-menu flow"  id="dropdownItems2" aria-labelledby="dropdownMenuButton">
 
@@ -31,7 +31,26 @@
       </div></div>
     
       <div class="container mt-5">
-        <canvas id="myChart" width="400" height="200"></canvas>
+        <div id="average"></div>
+        <span id="rate"></span>
+        <span id="percent"></span>        
+        <canvas id="myChart" width="400" height="120"></canvas>
+        <div id="average"></div>
+        <div class="d-flex">
+        <div class="border-0" type="text" id="currency1">---</div>
+        <div>/</div>
+        <div class="border-0" type="text" id="currency2">---</div>
+        </div>
+        <button class="btn" id="quarter">15M</button>
+        <button class="btn" id="hour">1H</button>
+        <button class="btn" id="day">1D</button>
+        <button class="btn" id="week">1W</button>
+        <button class="btn" id="month">1M</button>
+
+
+
+
+
     </div></div>
 
 
