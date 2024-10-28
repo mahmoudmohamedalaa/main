@@ -6,22 +6,26 @@
     <title>Currency Chart</title>
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"/>
 
 </head>
 <body>
-  <div class="container d-flex justify-content-center align-items-center">
-    <div class="d-flex flex-column gap-4 me-3">
+  <div class="ms-5 mt-5">
+  <p class="fs-1 fw-bold m-0">Forex Exchange</p>
+  <p class="text-muted fw-bold">Check out the current price for a currency pair</p></div>
+    <div id="size" class="container d-flex justify-content-center align-items-center">
+    <div id="dropdown" class="d-flex flex-column gap-4 me-4 col-3">
     <div class="dropdown">
-        <button class="btn border dropdown-toggle" type="button" id="button1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn border d-flex dropdown-toggle w-100 height-3 justify-content-between align-items-center" type="button" id="button1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Select currency
         </button>
-        <div class="dropdown-menu flow " id="dropdownItems1" aria-labelledby="dropdownMenuButton">
+        <div class=" dropdown-menu flow " id="dropdownItems1" aria-labelledby="dropdownMenuButton">
 
         </div>
-    
+
       </div>
       <div class="dropdown">
-        <button class="btn border dropdown-toggle" type="button" id="button2"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn border d-flex dropdown-toggle w-100 height-3 justify-content-between align-items-center" type="button" id="button2"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Select currency
         </button>
         <div class="dropdown-menu flow"  id="dropdownItems2" aria-labelledby="dropdownMenuButton">
@@ -29,26 +33,32 @@
         </div>
     
       </div></div>
-    
-      <div class="container mt-5">
-        <div id="average"></div>
-        <span id="rate"></span>
-        <span id="percent"></span>        
+      <div id="chart" class="card border-0 shadow col-9 mt-5">
+        <div class="d-flex gap-3 align-items-center m-3">
+          <div id="flag1"></div>
+          <div id="flag2"></div>
+          <div class="badge fs-4 bg-light p-1 rounded-pill text-secondary">Forex.com</div>
+          </div>
+        <div class="d-flex align justify-content-between align-items-center">
+        <div class="d-flex fw-bold fs-1 ms-3">
+          <div class="border-0" id="currency1">USD</div>
+          <div>/</div>
+          <div class="border-0" id="currency2">EGP</div>
+          </div>
+        <div class="d-flex flex-column fw-bold fs-5 align-items-end me-3">
+        <div id="average">$12345</div>
+        <div>
+        <span id="rate" class="text-success">123456</span>
+        <span id="percent" class="text-success">(12345%)</span></div></div></div>  
+        <div class="d-flex flex-column">
         <canvas id="myChart" width="400" height="120"></canvas>
-        <div id="average"></div>
-        <div class="d-flex">
-        <div class="border-0" type="text" id="currency1">---</div>
-        <div>/</div>
-        <div class="border-0" type="text" id="currency2">---</div>
-        </div>
+        <div class="d-flex border-0 justify-content-around my-3">
         <button class="btn" id="quarter">15M</button>
         <button class="btn" id="hour">1H</button>
         <button class="btn" id="day">1D</button>
         <button class="btn" id="week">1W</button>
-        <button class="btn" id="month">1M</button>
-
-
-
+        <button class="btn" id="month">1M</button></div></div>
+        <div id="average"></div>
 
 
     </div></div>

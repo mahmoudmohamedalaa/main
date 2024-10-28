@@ -17,7 +17,7 @@ const percent_div=document.getElementById("percent");
 function formatDate(date) {
     const year = date.getFullYear();
     const month = String(date.getUTCMonth() + 1).padStart(2, '0'); // Months are zero-based
-    const day = String(date.getUTCDate()-2).padStart(2, '0');
+    const day = String(date.getUTCDate()).padStart(2, '0');
     const hours = String(date.getUTCHours()).padStart(2, '0');
     const minutes = String(date.getUTCMinutes()).padStart(2, '0');
 
@@ -39,6 +39,9 @@ dropdownItems1.forEach(item => {
         firstinput.textContent = this.textContent;
         document.getElementById("button1").textContent=this.textContent;
         input1=this.textContent;
+        console.log(input1);
+        let flag1=document.getElementById("flag1")
+        flag(input1,flag1);
 
     });
 });
@@ -50,28 +53,10 @@ dropdownItems2.forEach(item => {
         secondinput.textContent = this.textContent; 
         document.getElementById("button2").textContent=this.textContent;
         input2=this.textContent;
+        let flag2=document.getElementById("flag2")
+        flag(input2,flag2);
         Exchange = input1+input2;
         console.log(Exchange);
-    // if(Data){
-    //         const Data = JSON.parse(localStorage.getItem('Data'));
-    //         console.log(Data);
-    
-    // }
-    // else{
-
-    // axios.get(`https://marketdata.tradermade.com/api/v1/timeseries?api_key=IhNDplgSDJWAxAXFyIKH&currency=${Exchange}&format=columns&start_date=${start_date}&end_date=${end_date}&interval=${interval}&period=${period}`)
-    //         .then(response => {
-    //         const Numbers = localStorage.setItem('Data',JSON.stringify(response.data));   
-    
-    //         })
-    //         .catch(error => {
-    //         console.log(error);
-    //         });
-            
-    //     }
-        
-
-
 
 });
 
@@ -92,7 +77,7 @@ button1.addEventListener('click', function() {
 
     interval='minute';
     period=1;
-    //time_series();
+    time_series();
 });
 button2.addEventListener('click', function() {
     console.log('1 Hour was clicked!');
@@ -105,7 +90,7 @@ button2.addEventListener('click', function() {
 
     interval='minute';
     period=5;
-   // time_series();
+    time_series();
 });
 button3.addEventListener('click', function() {
     console.log('1 Day was clicked!');
@@ -117,8 +102,8 @@ button3.addEventListener('click', function() {
     console.log(end_date);
 
     interval='hourly';
-    period=4;
-    //time_series();
+    period=1;
+    time_series();
 });
 button4.addEventListener('click', function() {
     console.log('1 Week was clicked!');
@@ -129,8 +114,8 @@ button4.addEventListener('click', function() {
     end_date=formattedDate;
     console.log(end_date);
 
-    interval='daily';
-    period=1;
+    interval='hourly';
+    period=6;
     time_series();
 });
 button5.addEventListener('click', function() {
@@ -143,7 +128,7 @@ button5.addEventListener('click', function() {
     console.log(end_date);
 
     interval='daily';
-    period=5;
+    period=1;
 time_series();
 });
 
@@ -175,11 +160,11 @@ console.log(average);
 }
 function Rate(array){
     length=array.length;
-    rate=Math.abs(array[length-1]-array[length-2]);
+    rate=array[length-1]-array[length-2];
     console.log(rate);
 }
 function Percent(array){
-    let subtract=Math.abs(array[length-1]-array[0]);
+    let subtract=array[length-1]-array[0];
     percent=rate/array[0];
     percent*=100;
     console.log(percent);

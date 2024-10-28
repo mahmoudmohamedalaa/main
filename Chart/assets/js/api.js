@@ -1,5 +1,4 @@
 const currency = JSON.parse(localStorage.getItem('currency'));
-//const Data = JSON.parse(localStorage.getItem('Data'));
 let Exchange;
 
 

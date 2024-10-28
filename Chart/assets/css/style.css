@@ -4,3 +4,18 @@
 .flow{
     overflow-y: auto;
 }
+#flag1,#flag2{
+    font-size: 3rem;
+}
+.border-2{
+    border-radius: 2rem;
+}
+.height-3{
+height:3rem;
+}
+#quarter:hover,#hour:hover,#day:hover,#week:hover,#month:hover{
+background-color: #dceafe;
+}
+*{
+	box-sizing: border-box;
+}
