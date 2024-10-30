@@ -1,5 +1,5 @@
-const curr_arr=[];
-let emp_arr=[];
+const currency_arr=[];
+let none_array=[];
 let points;
 let myAreaChart = null;
 const currencyToFlagCode = {
@@ -79,7 +79,8 @@ const currencyToFlagCode = {
     ZAR: "za",
     ZWL: "zw",
 };
-function flag(flag,icon){
+
+function flag_Show(flag,icon){
     icon.className="";
     icon.classList.add("fi","fis",`fi-${currencyToFlagCode[flag]}` , "rounded-circle");
 
@@ -91,7 +92,7 @@ function chart_points(Data){
 }
 function empty_array(){
 for(let i = 0;i<points.length;i++){
-emp_arr.push('');
+none_array.push('');
 }
 }
 function chart(){
@@ -103,9 +104,9 @@ const ctx = document.getElementById('myChart').getContext('2d');
 myAreaChart = new Chart(ctx, {
     type: 'line', // Use 'line' for an area chart
     data: {
-        labels: emp_arr,
+        labels: none_array,
         datasets: [{
-            label:emp_arr,
+            label:none_array,
             data: points,
             fill: true, // Enable filling
             backgroundColor: '#f3f9eb',
@@ -129,16 +130,16 @@ myAreaChart = new Chart(ctx, {
         }
     
 });}
-function curr_array(){
+function currency_array(){
     Object.keys(currency.available_currencies).forEach(key => {
-        curr_arr.push(key);
+        currency_arr.push(key);
         
     });
 }
-function dropdown1(){
-    curr_array();
+function dropdown_currency1(){
+    currency_array();
     const dropdownItemsContainer1 = document.getElementById('dropdownItems1');
-    curr_arr.forEach(item =>{
+    currency_arr.forEach(item =>{
         const dropdownItem = document.createElement('a');
         dropdownItem.className = 'dropdown-item currency1';
         dropdownItem.textContent = item;
@@ -146,10 +147,10 @@ function dropdown1(){
     });
     
 }
-function dropdown2(){
-    curr_array();
+function dropdown_currency2(){
+    currency_array();
     const dropdownItemsContainer1 = document.getElementById('dropdownItems2');
-    curr_arr.forEach(item =>{
+    currency_arr.forEach(item =>{
         const dropdownItem = document.createElement('a');
         dropdownItem.className = 'dropdown-item currency2';
         dropdownItem.textContent = item;
@@ -169,7 +170,7 @@ myAreaChart = new Chart(ctx, {
     data: {
         labels: ['','','',''],
         datasets: [{
-            label:emp_arr,
+            label:none_array,
             data: [1,2,3,4],
             fill: true, // Enable filling
             backgroundColor: '#f3f9eb',
@@ -193,6 +194,8 @@ myAreaChart = new Chart(ctx, {
         }
     
 });}
+
+
 //mobile view handle
 function updateClassForMobile() {
     const element = document.getElementById('size');
@@ -212,6 +215,6 @@ function updateClassForMobile() {
 }
 window.onload = updateClassForMobile();
 window.onresize = updateClassForMobile();
-dropdown1();
-dropdown2();
+dropdown_currency1();
+dropdown_currency2();
 default_chart();
