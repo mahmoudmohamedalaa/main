@@ -1,5 +1,7 @@
 const currency = JSON.parse(localStorage.getItem('currency'));
 let Exchange;
+let Data_points;
+
 
 
 if(currency){
@@ -12,7 +14,7 @@ axios.get('https://marketdata.tradermade.com/api/v1/live_currencies_list?api_key
         })
         .catch(error => {
         console.log(error);
-        console.log('check variables in the link if they are correct');
+        alert('check variables in the link if they are correct');
         })
 }
 function time_series(){
@@ -21,20 +23,13 @@ function time_series(){
                 .then(response => {
                 localStorage.setItem('Data',JSON.stringify(response.data));  
                 let Data=response.data.quotes.close;
-                let Data_points=Object.values(Data);
+                Data_points=Object.values(Data);
                 console.log(Data_points);
-                sum = Data_points.reduce((accumulator, current) => accumulator + current, 0);
-                Average_Calculate(Data_points);
-                average_div.textContent='$' + average;
-                Rate_Calculate(Data_points);
-                rate_div.textContent=rate;
-                Percent_Calculate(Data_points);
-                percent_div.textContent=`(${percent}%)`;
-                chart_points(Data_points);
+                show_calc();
                 })
                 .catch(error => {
                 console.log(error);
-                console.log('check variables in the link if they are correct');
+                alert('check variables in the link if they are correct');
 
                 });
 }

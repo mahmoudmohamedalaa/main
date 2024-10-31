@@ -9,7 +9,7 @@ let average;
 let percent;
 let rate;
 let sum;
-const average_div=document.getElementById("average");
+const averageDiv=document.getElementById("average");
 const rate_div=document.getElementById("rate");
 const percent_div=document.getElementById("percent");
 const button_15m = document.getElementById('quarter');
@@ -59,7 +59,7 @@ dropdownItems_currency1.forEach(item => {
         input1=this.textContent;
         console.log(input1);
         let flag1=document.getElementById("flag1")
-        flag_Show(input1,flag1);
+        showFlag(input1,flag1);
 
     });
 });
@@ -72,7 +72,7 @@ dropdownItems_currency2.forEach(item => {
         document.getElementById("button2").textContent=this.textContent;
         input2=this.textContent;
         let flag2=document.getElementById("flag2")
-        flag_Show(input2,flag2);
+        showFlag(input2,flag2);
         Exchange = input1+input2;
         Button_Enable();
         console.log(Exchange);
@@ -148,16 +148,16 @@ time_series();
 
 
 
-function Average_Calculate(array){
+function average_calculate(array){
 average=sum/array.length;
 console.log(average);
 }
-function Rate_Calculate(array){
+function rate_calculate(array){
     length=array.length;
     rate=array[length-1]-array[length-2];
     console.log(rate);
 }
-function Percent_Calculate(array){
+function percent_calculate(array){
     let subtract=array[length-1]-array[0];
     percent=rate/array[0];
     percent*=100;

@@ -80,7 +80,7 @@ const currencyToFlagCode = {
     ZWL: "zw",
 };
 
-function flag_Show(flag,icon){
+function showFlag(flag,icon){
     icon.className="";
     icon.classList.add("fi","fis",`fi-${currencyToFlagCode[flag]}` , "rounded-circle");
 
@@ -136,30 +136,18 @@ function currency_array(){
         
     });
 }
-function dropdown_currency1(){
+function dropdown_currency(id,id2){
     currency_array();
-    const dropdownItemsContainer1 = document.getElementById('dropdownItems1');
+    const dropdownItemsContainer1 = document.getElementById(id);
     currency_arr.forEach(item =>{
         const dropdownItem = document.createElement('a');
-        dropdownItem.className = 'dropdown-item currency1';
+        dropdownItem.className = `dropdown-item ${id2}` ;
         dropdownItem.textContent = item;
         dropdownItemsContainer1.appendChild(dropdownItem);
     });
     
 }
-function dropdown_currency2(){
-    currency_array();
-    const dropdownItemsContainer1 = document.getElementById('dropdownItems2');
-    currency_arr.forEach(item =>{
-        const dropdownItem = document.createElement('a');
-        dropdownItem.className = 'dropdown-item currency2';
-        dropdownItem.textContent = item;
-        dropdownItemsContainer1.appendChild(dropdownItem);
 
-
-    });
-    
-}
 function default_chart(){
     if(myAreaChart){
         myAreaChart.destroy();
@@ -213,8 +201,18 @@ function updateClassForMobile() {
         element.classList.remove('flex-column');
     }
 }
+function show_calc(){
+    sum = Data_points.reduce((accumulator, current) => accumulator + current, 0);
+    average_calculate(Data_points);
+    averageDiv.textContent='$' + average;
+    rate_calculate(Data_points);
+    rate_div.textContent=rate;
+    percent_calculate(Data_points);
+    percent_div.textContent=`(${percent}%)`;
+    chart_points(Data_points);}
 window.onload = updateClassForMobile();
 window.onresize = updateClassForMobile();
-dropdown_currency1();
-dropdown_currency2();
+dropdown_currency('dropdownItems1','currency1');
+dropdown_currency('dropdownItems2','currency2');
+
 default_chart();
