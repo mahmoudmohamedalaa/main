@@ -1,0 +1,15 @@
+
+
+.underlined{
+  color:black;
+  border-bottom: 2px solid blue;
+  width:40%;
+  padding-left: 10px;
+}
+.purple-bg{
+  background-color: rgba(160, 167, 221, 0.813);
+  opacity:70%;
+}
+.border-purple{
+border-bottom: 5px solid purple;
+}
