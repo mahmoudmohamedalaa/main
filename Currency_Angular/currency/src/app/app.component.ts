@@ -41,10 +41,5 @@ export class AppComponent {
     const toRate = this.exchangeRates[this.toCurrency];
     this.convertedAmount = (this.amount * (toRate / fromRate));
   }
-  addUnderline(event: MouseEvent) {
-    
-    const anchor = event.target as HTMLAnchorElement;
-    anchor.classList.add('underlined');
-  }
 
 }
