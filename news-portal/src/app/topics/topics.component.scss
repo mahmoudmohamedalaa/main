@@ -1,0 +1,60 @@
+.margin-110-t{
+  margin-top: 110px;
+}
+.line-21{
+  line-height: 21.33px;
+}
+
+
+div{
+  div{
+    p,span{
+      padding-left: 12px;
+    }
+  }
+}
+.margin-80-t{
+  margin-top: 80px;
+}
+
+@media (min-width:700px) and (max-width:1023px){
+  .font-24-md{
+    font-size: 24px;
+  }
+  .margin-143-t-md{
+    margin-top: 143px;
+  }
+  .line-36-md{
+    line-height: 36px;
+
+  }
+  span{
+    font-size:12px;
+  }
+  div{
+    div{
+      p,span{
+        padding-left:16.97px;
+      }
+    }
+  }
+}
+@media (min-width:1024px){
+  .font-32-lg{
+    font-size: 36px;
+  }
+  .margin-174-t-lg{
+    margin-top: 174px;
+  }
+  .line-48-lg{
+    line-height: 48px;
+
+  }
+  div{
+    div{
+      p,span{
+        padding-left:16px;
+      }
+    }
+  }
+}
