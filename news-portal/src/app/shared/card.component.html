@@ -1,12 +1,12 @@
 <div class="row">
-<div *ngFor='let card of cards' class="col-12 col-md-8 col-lg-6">
+<div *ngFor='let card of news' class="col-12 col-md-8 col-lg-6">
 
   <div>
-    <img [src]="card.imageUrl" class="card-img-top" alt="{{card.cardTitle}}">
+    <img [src]="card.urlToImage" class="card-img-top" alt="{{card.description}}">
     <div class="card-body p-0 mb-5">
-      <h5 class="card-title font-16 font-18-md font-24-lg fw-bold line-21 line-24-md line-32-lg playfair-font mt-2 mb-0 padding-8-t-lg padding-24-b-lg padding-8-t-md padding-24-b-md">{{card.cardTitle}}</h5>
-      <span class="card-text font-8 font-12-md font-12-lg font-400 ps-0 me-3">{{card.cardText1}}</span>
-      <span class="card-text font-8 font-12-md font-12-lg font-400">{{card.cardText2}}</span>
+      <h5 class="card-title font-16 font-18-md font-24-lg fw-bold line-21 line-24-md line-32-lg playfair-font mt-2 mb-0 padding-8-t-lg padding-24-b-lg padding-8-t-md padding-24-b-md">{{card.title}}</h5>
+      <span class="card-text font-8 font-12-md font-12-lg font-400 ps-0 me-3">{{card.publishedAt | date:'yyyy-MM-dd'}}</span>
+      <span class="card-text font-8 font-12-md font-12-lg font-400">{{card.author}}</span>
     </div>
 
 </div></div></div>
