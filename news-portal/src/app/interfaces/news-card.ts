@@ -4,7 +4,8 @@ export interface ICards{
   "author":string ,
   "title":string ,
   "publishedAt":string ,
-  "content":string
+  "content":string,
+  "source":object
 
 }
 

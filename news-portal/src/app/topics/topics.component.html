@@ -1,17 +1,14 @@
 <div class="container-fluid">
   <div class="row justify-content-center">
     <div class="col-20 col-lg-15">
-      <h1 class="fw-bold roboto-font font-36 pt-2">{{title}}</h1>
-      <div class="card" *ngIf="topics">
-        <picture>
-          <source class="card-img" media="(min-width:1024px)" [srcset]="topics.urlToImage">
-          <source class="card-img" media="(min-width:768px)" [srcset]="topics.urlToImage">
-          <img class="card-img" [src]="topics.urlToImage" alt="olympics photo"></picture>
-          <div class="card-img-overlay text-white  col-lg-15 col-24 px-0">
+      <h1 class="roboto-font font-36 pt-2">{{title}}</h1>
+      <div  class="card" *ngIf="topics">
+          <img class="card-img img-size img-size-md img-size-lg" [src]="topics.urlToImage" [alt]="topics.description">
+          <div class="card-img-overlay text-white col-lg-15 col-24 px-0">
             <div class="position-absolute bottom-0 mb-4">
-          <p class="fw-bold font-16 font-24-md font-32-lg playfair-font line-21 line-36-md mb-2 line-48-lg ">{{topics.title}}</p>
-          <span class="font-400 font-8 spacing-16-r roboto-font">{{topics.publishedAt | date: 'short'}}</span>
-          <span class="font-400 font-8 roboto-font">{{topics.author}}</span></div></div>
+          <p class="font-100 font-24-md font-32-lg playfair-font line-21 line-36-md mb-2 line-48-lg ">{{topics.title}}</p>
+          <span class=" font-8 spacing-16-r roboto-md-font">{{topics.publishedAt | date: 'short'}}</span>
+          <span class=" font-8 roboto-font roboto-md-font">{{topics.author}}</span></div></div>
 </div>
 </div>
 <div class="d-none col-lg-5 d-lg-block d-xl-block font-400 font-16 margin-80-t playfair-font">

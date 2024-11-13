@@ -1,4 +1,6 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component,Input} from '@angular/core';
+import { ICards } from '../interfaces/news-card';
+
 
 
 @Component({
@@ -8,6 +10,9 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 })
 export class NewsComponent {
   title:string='Latest News';
+  @Input() news!:ICards[];
+
+
 
 
   }

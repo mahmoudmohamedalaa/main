@@ -1,7 +1,6 @@
 import { HttpClient, HttpErrorResponse } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { catchError, Observable, tap, throwError } from "rxjs";
-import { ICards } from "../interfaces/news-card";
+import { catchError, Observable, map, throwError } from "rxjs";
 
 @Injectable({
   providedIn:'root'
@@ -10,9 +9,9 @@ export class NewsService{
   API_KEY:string='f338f50284e94bcb90d9442d2ebaeb34';
   private newsUrl=`https://newsapi.org/v2/top-headlines?country=us&apiKey=${this.API_KEY}`
   constructor (private http:HttpClient){}
-  getnews():Observable<any>{
-    return this.http.get<ICards>(this.newsUrl).pipe(
-      tap(data=>console.log(JSON.stringify(data))),
+  getNews():Observable<any>{
+    return this.http.get<any>(this.newsUrl).pipe(
+      map(data=>{return data.articles}),
       catchError(this.handleError)
     );}
     private handleError(err: HttpErrorResponse){

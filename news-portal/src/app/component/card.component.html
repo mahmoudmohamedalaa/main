@@ -1,0 +1,11 @@
+<div>
+    <img [src]="Card.urlToImage?Card.urlToImage : './assets/images/black-image.png'" class="rounded card-img-top img-size-card img-size-card-md img-size-card-lg" [alt]="Card.description">
+    <div class="card-body p-0 mb-5">
+      <div>
+      <h5 class="card-title font-16 font-18-md font-24-lg line-21 line-24-md line-32-lg playfair-font mt-2 mb-0 padding-8-t-lg padding-24-b-lg padding-8-t-md padding-24-b-md">{{Card.title}}</h5>
+      <div class="roboto-md-font">
+      <span class="card-text span-color font-8 font-12-md font-12-lg ps-0 me-3">{{Card.publishedAt | date}}</span>
+      <span class="card-text span-color font-8 font-12-md font-12-lg">{{Card.author}}</span>
+    </div></div></div>
+
+</div>
