@@ -1,0 +1,14 @@
+//colors-map
+
+$colors-map:(
+    "black-color": $black-color,
+    "footer-color":$footer-color,
+    "span-color":$span-color,
+
+);
+
+@each $name,$hex-value in $colors-map {
+    .#{$name}{color:$hex-value;}
+    .#{$name}-bg{background-color:$hex-value;}
+
+}

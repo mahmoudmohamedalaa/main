@@ -1,0 +1,52 @@
+
+//font-sizes
+$font-8:8px;
+$font-11:11px;
+$font-12:12px;
+$font-13:13px;
+$font-14:14px;
+$font-15:15px;
+$font-16:16px;
+$font-18:18px;
+$font-20:20px;
+$font-24:24px;
+$font-32:32px;
+$font-36:36px;
+$font-48:48px;
+
+
+//line height
+
+$line-12:12px;
+$line-17:17px;
+$line-18:18px;
+$line-21:21px;
+$line-22:22px;
+$line-23:23px;
+$line-24:24px;
+$line-32:32px;
+
+
+
+
+
+
+@mixin size($width,$height){
+    width:$width;
+    height:$height;
+}
+
+//spacing
+$spacing-40:40px;
+$spacing-30:30px;
+$spacing-16:16px;
+$spacing-12:12px;
+
+
+
+
+
+//colors
+$footer-color:#f8f8f8;
+$span-color:#949494;
+$black-color:#121221;
